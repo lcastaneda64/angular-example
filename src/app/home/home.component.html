@@ -1,0 +1,5 @@
+<input type="text" name="buscar" [(ngModel)]="buscar" (ngModelChange)="busqueda()"  placeholder="Búsqueda">
+<button (click)="saludame()">Salúdame</button>
+
+<p class="parrafo" *ngFor="let candidato of candidatos" >{{ candidato.strNombre }}</p>
+
